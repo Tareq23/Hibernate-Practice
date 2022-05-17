@@ -34,6 +34,10 @@ public class Users {
 		this.password = password;
 	}
 
+	public Users() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public int getUserId() {
 		return userId;
 	}
@@ -73,6 +77,12 @@ public class Users {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+	@Override
+	public String toString() {
+		return "Users :=> [userId=" + userId + ", firstName=" + firstName + ", lastName=" + lastName + ", username="
+				+ username + ", password=" + password + "]";
+	}
 	
-	 
+	
 }

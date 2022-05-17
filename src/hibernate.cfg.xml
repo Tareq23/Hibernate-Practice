@@ -11,7 +11,7 @@
         <property name="connection.password">12x34y56z</property>
            
         <!-- Show SQL on console -->
-        <property name="show_sql">true</property>
+        <property name="show_sql">false</property>
  
 		<!--Setting Session context model -->
 		<property name="current_session_context_class">thread</property>

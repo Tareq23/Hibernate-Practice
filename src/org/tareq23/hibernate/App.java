@@ -1,5 +1,8 @@
 package org.tareq23.hibernate;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -19,17 +22,26 @@ public class App {
 		try {
 			
 			// Create object of entity class type
-			Users user = new Users("firstName", "lastName", "username", "password");
+			
+//			Users user = new Users("Rahul", "Roy", "rahul_roy", "password");
+			
+			Users user = new Users();
+			
+			
 			
 			// Start transaction
 			session.beginTransaction();
 			
 			// perform operation
 			
-			session.save(user);
+//			session.save(user);
+			
+			user = session.get(Users.class, 12);
+			System.out.println(user);
+			
 			// commit the transaction
 			session.getTransaction().commit();
-			System.out.println("New Row Added");
+//			System.out.println("New Row Added");
 			
 		}
 		finally {
