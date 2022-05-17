@@ -37,6 +37,7 @@ public class App {
 //			session.save(user);
 			
 			user = session.get(Users.class, 12);
+			user.setFirstName("Sumon");
 			System.out.println(user);
 			
 			// commit the transaction
