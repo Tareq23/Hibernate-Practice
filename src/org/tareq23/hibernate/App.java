@@ -37,7 +37,8 @@ public class App {
 //			session.save(user);
 			
 			user = session.get(Users.class, 12);
-			user.setFirstName("Sumon");
+//			user.setFirstName("Sumon");
+			session.delete(user);
 			System.out.println(user);
 			
 			// commit the transaction
